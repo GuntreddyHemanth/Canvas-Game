@@ -3,18 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <title>Canvasjs</title>
-    <style type="text/css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full viewport height */
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
         canvas {
             border: 1px solid black;
+            width: 800px;
+            height: 500px;
         }
-        
-        body{
-            margin: 0;
+
+        #resetButton {
+            position: relative;
+            margin: 20px 0;
         }
     </style>
   </head>
   <body>
+    <h1>Bubbles App</h1>
     <canvas id="canvas"></canvas>
+    <button id="resetButton">Reset</button>
     <script src="canvas.js"></script>
   </body>
 </html>
